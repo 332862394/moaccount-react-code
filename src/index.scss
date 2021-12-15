@@ -42,3 +42,8 @@ button {
   display: block;
   clear: both;
 }
+.oneLine {
+  white-space: nowrap; //不换行
+  overflow: hidden; //多了就隐藏
+  text-overflow: ellipsis; //多了的文字就显示省略号
+}
