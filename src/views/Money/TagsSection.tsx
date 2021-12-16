@@ -36,15 +36,9 @@ const Wrapper = styled.section`
 `;
 type Props = { value: number[]; onChange: (selected: number[]) => void };
 const TagsSection: React.FC<Props> = (props) => {
-  const { tags, setTags } = useTags();
+  const { tags, addTag } = useTags();
   const selectedTagIds = props.value;
-  const onAddTag = () => {
-    console.log("object");
-    const tagName = window.prompt("新标签的名称");
-    if (tagName !== null) {
-      setTags((t) => [...tags, { id: createId(), name: tagName }]);
-    }
-  };
+
   const onToggleTag = (tagId: number) => {
     const index = selectedTagIds.indexOf(tagId);
     console.log("index:", index);
@@ -72,7 +66,7 @@ const TagsSection: React.FC<Props> = (props) => {
           </li>
         ))}
       </ol>
-      <button onClick={onAddTag}>新增标签</button>
+      <button onClick={addTag}>新增标签</button>
     </Wrapper>
   );
 };

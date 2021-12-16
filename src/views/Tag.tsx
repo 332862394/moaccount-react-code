@@ -1,6 +1,6 @@
 import React from "react";
 import { useTags } from "useTags";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Layout from "components/Layout";
 import Icon from "components/Icon";
 import { Button } from "components/Button";
@@ -56,8 +56,10 @@ const Tag: React.FC = () => {
       </Center>
     </div>
   );
+  const navigate = useNavigate();
   const onClickBack = () => {
-    window.history.back();
+    // window.history.back();
+    navigate(-1);
   };
   return (
     <Layout>
