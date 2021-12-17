@@ -1,15 +1,6 @@
 import { createId } from "lib/createId";
 import { useEffect, useState } from "react";
 import { useUpdate } from "hooks/useUpdate";
-import { identifier } from "@babel/types";
-import Tags from "../views/Tags";
-import { Tag } from "views/Tag";
-const defaultTags = [
-  { id: createId(), name: "衣" },
-  { id: createId(), name: "食" },
-  { id: createId(), name: "住" },
-  { id: createId(), name: "行" },
-];
 const useTags = () => {
   const [tags, setTags] = useState<{ id: number; name: string }[]>([]);
   useEffect(() => {

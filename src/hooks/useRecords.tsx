@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useUpdate } from "hooks/useUpdate";
 import { useEffect } from "react";
 type RecordItem = {
