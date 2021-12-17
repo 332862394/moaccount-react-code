@@ -2,7 +2,7 @@ import { createId } from "lib/createId";
 import { useEffect, useState } from "react";
 import { useUpdate } from "hooks/useUpdate";
 import { identifier } from "@babel/types";
-import Tags from "./views/Tags";
+import Tags from "../views/Tags";
 import { Tag } from "views/Tag";
 const defaultTags = [
   { id: createId(), name: "衣" },
