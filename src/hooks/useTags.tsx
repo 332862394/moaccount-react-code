@@ -17,7 +17,7 @@ const useTags = () => {
   }, []);
   useUpdate(() => {
     window.localStorage.setItem("tags", JSON.stringify(tags));
-  }, [tags]);
+  }, tags);
   const findTag = (id: number) => tags.filter((tag) => tag.id === id)[0];
   const findTagIndex = (id: number) => {
     let result = -1;
@@ -42,8 +42,13 @@ const useTags = () => {
       setTags((t) => [...tags, { id: createId(), name: tagName }]);
     }
   };
+  const getName = (id: number) => {
+    const tag = tags.filter((t) => t.id === id)[0];
+    return tag ? tag.name : "";
+  };
   return {
     tags,
+    getName,
     addTag,
     setTags,
     findTag,
