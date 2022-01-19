@@ -18,14 +18,17 @@ const NavWrapper = styled.nav`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: #aaa;
+        font-size: 14px;
         .icon {
           width: 24px;
           height: 24px;
+          fill: #aaa;
         }
         &.active {
-          color: red;
+          color: #2b71cc;
           .icon {
-            fill: red;
+            fill: #2b71cc;
           }
         }
       }

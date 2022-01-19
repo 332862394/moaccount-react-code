@@ -12,7 +12,14 @@ const MyLayout = styled(Layout)`
   flex-direction: column;
 `;
 const CategoryWrapper = styled.div`
-  background: #c4c4c4;
+  background-image: linear-gradient(
+    to right top,
+    #39c4eb,
+    #00b1e7,
+    #009ce2,
+    #0087d9,
+    #2b71cc
+  );
 `;
 type Category = "-" | "+";
 const defaultFormData = {

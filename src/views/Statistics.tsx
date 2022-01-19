@@ -7,7 +7,14 @@ import { useTags } from "../hooks/useTags";
 import day from "dayjs";
 
 const CategoryWrapper = styled.div`
-  background: white;
+  background-image: linear-gradient(
+    to right top,
+    #39c4eb,
+    #00b1e7,
+    #009ce2,
+    #0087d9,
+    #2b71cc
+  );
 `;
 
 const Item = styled.div`

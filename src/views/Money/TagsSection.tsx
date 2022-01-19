@@ -19,8 +19,16 @@ const Wrapper = styled.section`
       padding: 3px 18px;
       font-size: 14px;
       margin: 8px 12px;
+      color: white;
       &.selected {
-        background: #f60;
+        background-image: linear-gradient(
+          to right top,
+          #39c4eb,
+          #00b1e7,
+          #009ce2,
+          #0087d9,
+          #2b71cc
+        );
       }
     }
   }

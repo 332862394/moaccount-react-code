@@ -13,6 +13,8 @@ import NoMatch from "views/NoMatch";
 import styled from "styled-components";
 const AppWrapper = styled.div`
   color: #333;
+  max-width: 520px;
+  margin: 0 auto;
 `;
 function App() {
   return (

@@ -10,11 +10,12 @@ const Wrapper = styled.section`
       text-align: center;
       padding: 16px 0;
       position: relative;
+      color: white;
       &.selected::after {
         content: "";
         display: block;
         height: 3px;
-        background: #333;
+        background: white;
         position: absolute;
         bottom: 0;
         width: 100%;
