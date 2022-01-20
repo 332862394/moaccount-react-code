@@ -9,3 +9,4 @@ git remote add origin git@github.com:332862394/moaccount-react.git &&
 git branch -M main &&
 git push -u origin main -f
 cd -
+echo https://332862394.github.io/moaccount-react/
