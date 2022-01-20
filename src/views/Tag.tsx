@@ -49,6 +49,7 @@ const Tag: React.FC = () => {
         <Button
           onClick={() => {
             deleteTag(tag.id);
+            onClickBack();
           }}
         >
           删除标签
